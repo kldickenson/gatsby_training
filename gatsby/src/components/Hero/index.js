@@ -9,7 +9,7 @@ import Rating from '../Rating';
 
 import styles from './styles.module.scss';
 
-import {fluidImage} from '../../global/js/customPropTypes';
+import { fluidImage } from '../../global/js/customPropTypes';
 
 const Hero = ({ title, subtitle, image, rating, stars, path }) => {
   return (
@@ -26,7 +26,7 @@ const Hero = ({ title, subtitle, image, rating, stars, path }) => {
             <Rating rating={rating} classes={styles.rating} />
             <Stars stars={stars} />
           </div>
-          <Button buttonType="primary">Watch Now</Button>
+          <Button buttonType="primary">Watch Now!</Button>
         </div>
         <Image fluid={image}></Image>
       </div>

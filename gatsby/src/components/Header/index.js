@@ -5,6 +5,8 @@ import React from 'react';
 import Container from '../Container';
 import styles from './styles.module.scss';
 
+import Eyebrow from '../Eyebrow';
+
 const Header = ({ siteTitle }) => {
   const data = useStaticQuery(graphql`
     {
@@ -31,6 +33,7 @@ const Header = ({ siteTitle }) => {
             alt={siteTitle}
           />
         </Link>
+        <Eyebrow children="Learning Gatsby at BADcamp!" />
       </Container>
     </header>
   );
